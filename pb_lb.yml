@@ -1,0 +1,10 @@
+---
+- name: gather all hosts information
+  hosts: all
+
+- hosts: loadbalancers
+  become: yes
+  # sudo: True
+  roles:
+    - common
+    - lb

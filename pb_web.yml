@@ -1,0 +1,7 @@
+---
+- hosts: webservers
+  become: yes
+  # sudo: True
+  roles:
+    - common
+    - web
